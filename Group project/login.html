@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" type="text/css"href="style.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            width: 300px;
+            margin: 100px auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        h2 {
+            text-align: center;
+        }
+        h3{
+         background-color: antiquewhite;
+           color: cyan;
+
+        }
+        input[type="text"],
+        input[type="password"] {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+        input[type="submit"] {
+            width: 100%;
+            background-color: #007bff;
+            color: #fff;
+            padding: 10px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        input[type="submit"]:hover {
+            background-color: #0056b3;
+        }
+        .notification {
+            color: #ff0000;
+            text-align: center;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Login</h2>
+        <form id="loginForm" action="" method="post" onsubmit="return validateForm()">
+            <input type="text" id="username" name="username" placeholder="Username" required>
+            <input type="password" id="password" name="password" placeholder="Password" required>
+            <input type="submit" value="Login"><br><br>
+            <label>Dont have account?<a href="Register.html"><h3>Register</h3></a></label>
+        </form>
+        <div id="notification" class="notification"></div>
+
+        <script>
+            function validateForm() {
+                var username = document.getElementById("username").value;
+                var password = document.getElementById("password").value;
+                var notification = document.getElementById("notification");
+
+                // Regex patterns for validation
+                var upperCaseLetters = /[A-Z]/g;
+                var lowerCaseLetters = /[a-z]/g;
+                var numbers = /[0-9]/g;
+                var specialCharacters = /[!@#$%^&*(),.?":{}|<>]/g;
+                var namePattern = /^[a-zA-Z]+$/; // Name should contain only alphabets
+
+                // Username validation
+                if (!username.match(namePattern)) {
+                    notification.textContent = "Username must contain only alphabets.";
+                    return false;
+                }
+
+                // Password validation
+                if (password.length < 8) {
+                    notification.textContent = "Password must be at least 8 characters long.";
+                    return false;
+                } else if (!password.match(upperCaseLetters)) {
+                    notification.textContent = "Password must contain at least one uppercase letter.";
+                    return false;
+                } else if (!password.match(lowerCaseLetters)) {
+                    notification.textContent = "Password must contain at least one lowercase letter.";
+                    return false;
+                } else if (!password.match(numbers)) {
+                    notification.textContent = "Password must contain at least one number.";
+                    return false;
+                } else if (!password.match(specialCharacters)) {
+                    notification.textContent = "Password must contain at least one special character.";
+                    return false;
+                } else {
+                    notification.textContent = "Login successful!";
+                    return true;
+                }
+            }
+        </script>
+    </div>
+</body>
+</html>

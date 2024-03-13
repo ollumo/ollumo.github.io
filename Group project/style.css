@@ -1,0 +1,329 @@
+/* Resetting default browser styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body styles */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: aquamarines;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* Header styles */
+header {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+}
+
+header h1 {
+    font-size: 2em;
+}
+
+/* Main styles */
+main {
+    padding: 20px;
+}
+
+section {
+    margin-bottom: 20px;
+}
+
+h2 {
+    color: #204578;
+}
+
+/* Footer styles */
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+}
+
+/* Navigation styles */
+nav {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+a {
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 10px;
+    color: #333;
+    text-decoration: none;
+    border-radius: 5px;
+    background-color: #f4f4f4;
+    transition: background-color 0.3s ease;
+}
+
+a:hover {
+    background-color: #ccc;
+}
+
+/* Project list styles */
+ul {
+    list-style-type: none;
+}
+
+ul li {
+    margin-bottom: 5px;
+}
+
+/* Additional styles */
+p {
+    color: #555;
+}
+
+/* Responsive design */
+@media only screen and (max-width: 768px) {
+    header h1 {
+        font-size: 1.5em;
+    }
+
+    main {
+        padding: 10px;
+    }
+
+    footer {
+        padding: 5px 0;
+    }
+
+    a {
+        padding: 8px 16px;
+        margin: 5px;
+    }
+}
+.homepage,.homepage2,.homepage3{
+    
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #f2f2f2; /* Light gray background */
+         color: #333; /* Dark text color */
+    }
+    #quote {
+        position: relative; /* Positioning relative to its containing block */
+        font-family: sans-serif; /* Specifies the font family */
+        text-transform: uppercase; /* Converts text to uppercase */
+        font-size: 2em; /* Sets the font size to 2em (twice the size of the parent element's font size) */
+        letter-spacing: 4px; /* Sets the spacing between characters */
+        overflow: hidden; /* Hides any overflow content */
+        background: linear-gradient(45deg, #fc036b,blue, #41031d); /* Creates a linear gradient background with three colors */
+        background-repeat: no-repeat; /* Prevents the background from repeating */
+        background-size: 80%; /* Sets the size of the background */
+        animation: animate 2s linear infinite; /* Applies an animation called "animate" with a duration of 8 seconds, linear timing, and infinite iteration */
+        -webkit-background-clip: text; /* Sets the background clip to the text content */
+        -webkit-text-fill-color: rgba(255, 255, 255, 0); /* Sets the text color to transparent */
+        background-color:greenyellow;
+    }
+      
+      @keyframes animate {
+        0% {
+          background-position: 0 50%;
+        }
+        50% {
+          background-position: 100% 50%;
+        }
+        100% {
+          background-position: 0 50%;
+        }
+      }
+      
+    main{
+        
+            padding: 20px;
+    }
+    h1 {
+        font-size: 36px;
+        margin-bottom: 20px;
+        color: #333;
+    }
+
+    h2 {
+        font-size: 24px;
+        margin-bottom: 10px;
+        color: #007bff;
+    }
+
+    p {
+        font-size: 16px;
+        line-height: 1.6;
+        margin-bottom: 20px;
+        color: #555;
+    }
+    
+    header {
+        background-color: #007bff; /* Android blue color */
+        color: #fff; /* White text color */
+        padding: 10px 20px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+    .dropdown {
+        position: relative;
+    }
+    
+    .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: #ffffff;
+        min-width: 160px;
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+        z-index: 1;
+    }
+    
+    .dropdown:hover .dropdown-content {
+        display: block;
+        transition: color 0.3s; /* Smooth transition for color change */
+}
+    
+    
+    .dropdown-content a {
+        color: black;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+    }
+    
+    .dropdown-content a:hover {
+        background-color:blue;
+    }
+    .booking-section {
+        background-color: azure;
+        margin: 0;
+        padding: 0;
+    }
+    
+    .container {
+        background-color: #fff;
+        border: 1px solid #ccc;
+        padding: 20px;
+        margin: 20px auto;
+        max-width: 400px;
+    }
+    
+    .booking-section {
+        text-align: center;
+    }
+    
+    .login-link {
+        display: block;
+        margin-top: 20px;
+        text-align: center;
+        text-decoration: none;
+        background-color: #007bff;
+        color: #fff;
+        padding: 10px 20px;
+        border-radius: 5px;
+        transition: background-color 0.3s ease;
+    }
+    
+    .login-link:hover {
+        background-color: #0056b3;
+    }
+    .imag{
+        font-family: Arial, sans-serif;
+        background-color: #f4f4f4;
+        margin: 0;
+        padding: 0;
+           
+        }
+        .container {
+            max-width: 800px;
+            margin: 50px auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .image-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        .image-item {
+            margin: 10px;
+            border-radius: 5px;
+            overflow: hidden;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        .image-item img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+        }
+        .product{
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            width: 400px;
+            margin: 50px auto;
+            padding: 20px;
+            background-color:slateblue;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        h2 {
+            text-align: center;
+        }
+        label {
+            display: block;
+            margin-bottom: 10px;
+        }
+        select {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+        input[type="submit"] {
+            width: 100%;
+           
+            color: #fff;
+            padding: 10px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        input[type="submit"]:hover {
+            background-color: slategray;
+            background-color: #007bff;
+        }
+        .login-link {
+          
+        display: block;
+        margin-top: 20px;
+        text-align: center;
+        text-decoration: none;
+        background-color: #007bff;
+        color:greenyellow;
+        padding: 10px 20px;
+        border-radius: 5px;
+        transition: background-color 0.3s ease;
+    }
+    
+    .login-link:hover {
+        background-color: #0056b3;
+        }
+    
+    
+    
+
