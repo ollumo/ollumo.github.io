@@ -196,7 +196,7 @@ p {
     }
     
     .dropdown-content a:hover {
-        background-color:blue;
+        background-color:burlywood;
     }
     .booking-section {
         background-color: azure;
@@ -229,7 +229,7 @@ p {
     }
     
     .login-link:hover {
-        background-color: #0056b3;
+        background-color:burlywood;
     }
     .imag{
         font-family: Arial, sans-serif;
@@ -324,6 +324,50 @@ p {
         background-color: #0056b3;
         }
     
-    
-    
+        .container1 {
+            width: 300px;
+            margin: 100px auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        h2 {
+            text-align: center;
+        }
+        h3{
+         background-color: antiquewhite;
+           color: cyan;
 
+        }
+        input[type="text"],
+        input[type="password"] {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+        input[type="submit"] {
+            width: 100%;
+            background-color: #007bff;
+            color: #fff;
+            padding: 10px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        input[type="submit"]:hover {
+            background-color: #0056b3;
+        }
+        .notification {
+            color: #ff0000;
+            text-align: center;
+            margin-top: 10px;
+        }
+    .homepage{
+        background-color: darkgrey;
+    }
+
+        
