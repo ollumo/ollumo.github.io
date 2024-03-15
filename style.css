@@ -101,7 +101,14 @@ p {
         margin: 5px;
     }
 }
-.homepage,.homepage2,.homepage3{
+.homepage{
+    font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-image: url('android.jpeg');
+         color: #333; /* Dark text color */
+}
+.homepage2,.homepage3{
     
         font-family: Arial, sans-serif;
         margin: 0;
