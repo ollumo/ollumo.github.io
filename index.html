@@ -5,20 +5,78 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Home Page</title>
     <link rel="stylesheet" type="text/css" href="style.css">
+    <style>
+        /* Global Styles */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+        }
+
+        /* Hamburger Menu Icon Styles */
+        .hamburger-menu {
+            display: inline-block;
+            cursor: pointer;
+            padding: 10px;
+            background-color: #333;
+            color: #fff;
+            border-radius: 5px;
+        }
+
+        .hamburger-menu:hover {
+            background-color: #555;
+        }
+
+        .hamburger-menu span {
+            display: block;
+            width: 30px;
+            height: 3px;
+            background-color: #fff;
+            margin-bottom: 5px;
+        }
+
+        .hamburger-menu span:last-child {
+            margin-bottom: 0;
+        }
+
+        /* Navigation Menu Styles */
+        .nav-menu {
+            display: none;
+            margin-top: 10px;
+        }
+
+        .nav-menu a {
+            display: block;
+            padding: 10px;
+            text-decoration: none;
+            color: #333;
+            background-color: #f9f9f9;
+            border-radius: 5px;
+            margin-bottom: 5px;
+        }
+    </style>
 </head>
 <body class="homepage">
     <header>
-        <div class="dropdown">
-            <a href="#">Menu</a>
-            <div class="dropdown-content">
-                <a href="index.html">Home</a>
-                <a href="SITES AVAILABLE.html">Sites and Bookings</a>
-                <a href="us.html">About our company</a>
-                <a href="contact.html">Our contacts</a>
-                <a href="ima.html">Explore</a>
-            </div>
+        <div class="hamburger-menu" onclick="toggleMenu()">
+            <span></span>
+            <span></span>
+            <span></span>
         </div>
-        
+
+        <div class="nav-menu" id="navMenu">
+            <a href="index.html">Home</a>
+            <a href="SITES AVAILABLE.html">Sites and Bookings</a>
+            <a href="us.html">About our company</a>
+            <a href="contact.html">Our contacts</a>
+            <a href="ima.html">Explore</a>
+        </div>
+        <script>
+            function toggleMenu() {
+                var navMenu = document.getElementById('navMenu');
+                navMenu.style.display = navMenu.style.display === 'block' ? 'none' : 'block';
+            }
+        </script>
     </header>
     
     <main>
